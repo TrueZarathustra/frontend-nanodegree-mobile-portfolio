@@ -505,7 +505,7 @@ function updatePositions() {
 
   var itemsLength = items.length;
 
-  for (var i = 0; i < itemsLength; i++) {
+  for (i = 0; i < itemsLength; i++) {
     items[i].style.left = items[i].basicLeft + consts[i % 5] + 'px';
   }
 
