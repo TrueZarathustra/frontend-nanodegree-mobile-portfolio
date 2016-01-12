@@ -442,6 +442,7 @@ var resizePizzas = function(size) {
 
     var randomPizzas = document.querySelectorAll(".randomPizzaContainer");
 
+    // Change pizza sizes
     for (var i = 0; i < randomPizzas.length; i++) {
       randomPizzas[i].style.width = newSize + "%";
     }
@@ -490,6 +491,7 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 
 // Moves the sliding background pizzas based on scroll position
 function updatePositions() {
+  //This function was refactored to achieve better performance
   frame++;
   window.performance.mark("mark_start_frame");
 
@@ -503,7 +505,7 @@ function updatePositions() {
 
   var itemsLength = items.length;
 
-  for (var i = 0; i < itemsLength; i++) {
+  for (i = 0; i < itemsLength; i++) {
     items[i].style.left = items[i].basicLeft + consts[i % 5] + 'px';
   }
 
