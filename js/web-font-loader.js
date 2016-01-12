@@ -1,4 +1,4 @@
-
+      //Create web-font-loader to achive better speed of page loading
       WebFontConfig = {
         google: {
          families: ["Open Sans Condensed:400,700"]
